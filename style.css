@@ -21,6 +21,13 @@ p{
     font-weight: 400;
     color: #606060;
 }
+.extra-div h2{
+    font-size: 0.9rem;
+    margin: 20px 0 15px 0;
+    font-weight: bold;
+    line-height: 1.1;
+    word-spacing: 4px;
+}
 
 
 .header{
@@ -72,7 +79,7 @@ p{
 .banner-section{
     width: 100%;
     height: inherit;
-    color: rgb(129, 126, 126);
+  color:white;
  
     position: relative;
     text-align: center;
@@ -94,7 +101,7 @@ p{
     margin: 0 5px;
     padding: 12px 35px;
     outline: none;
-    color: white;
+    color:white;
     font-weight: 400;
 }
 
@@ -108,4 +115,27 @@ p{
 
 .center-div p{
     padding: 10px 0 20px 0;
+}
+
+
+/* extra header */
+
+
+.header-extra{
+    width:100%;
+    height:auto;
+    margin: 100px 0;
+}
+
+.extra-div{
+    background-color: white;
+    border:medium none;
+    padding: 50px !important;
+    border-radius:3px;
+    transition: 0.3s ease-in-out;
+    
+}
+.extra-div:hover{
+    box-shadow: 20px 0px 10px 0 rgba(0,0,0,0.1);
+    transform: translate(0,-20px) scale(1.1);
 }
