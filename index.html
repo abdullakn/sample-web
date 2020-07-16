@@ -27,16 +27,16 @@
                       <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item pr-2 ">
-                      <a class="nav-link" href="#">Service</a>
+                      <a class="nav-link" href="#servicediv">Service</a>
                     </li>
                     <li class="nav-item pr-2">
-                      <a class="nav-link" href="#">Price</a>
+                      <a class="nav-link" href="#pricingdiv">Price</a>
                     </li>
                     <li class="nav-item pr-2">
-                      <a class="nav-link" href="#">About</a>
+                      <a class="nav-link" href="#newsletter-div">About</a>
                     </li>
                     <li class="nav-item pr-2">
-                      <a class="nav-link" href="#">Contact</a>
+                      <a class="nav-link" href="#contact-div">Contact</a>
                     </li>
                    
                    
@@ -551,10 +551,10 @@
                         <div class="col-lg-4 col-md-6 col-12 footer-div text-center">
                             <div>
                                 <h3>NAVIGATION LINKS</h3>
-                               <li><a href="#">Home</a></li>
-                               <li><a href="#">Service</a></li>
-                               <li><a href="#">Price</a></li>
-                               <li><a href="#">About</a></li>
+                               <li><a href="#top-header">Home</a></li>
+                               <li><a href="#servicediv">Service</a></li>
+                               <li><a href="#pricingdiv">Price</a></li>
+                               <li><a href="#newsletter-div">About</a></li>
                                 
                                 
                                 </div>
@@ -583,7 +583,9 @@
                     <div class="mt-5 text-center">
                         <p>Copyright @2020 All right reserved | This template is made with love by AbduTechnical</p>
                     </div>
-                    
+                    <div class="scrolltop float-right">
+                        <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+                    </div>
                 </div>
 
             </footer>
@@ -598,7 +600,41 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
- 
+  <script>
+
+
+      //When user click on the arrow button, scroll on the top of the document
+
+
+      function topFunction(){
+          document.documentElement.scrollTop="0";  //for chrome firefox ie opera
+          document.body.scrollTop="0"   //for safari
+      }
+
+
+
+        //when user scroll down 20px from the top of the document, show the button
+
+
+      mybutton=document.getElementById("myBtn");
+      window.onscroll=function() {scrollfunction()};
+        function scrollfunction(){
+        if(document.body.scrollTop > 20 || document.documentElement.scrollTop > 20 ){
+            mybutton.style.display="block";
+        }else{
+            mybutton.style.display="none";
+        }
+    }
+
+
+    
+
+      
+
+      
+   
+      
+  </script>
     
 </body>
 </html>

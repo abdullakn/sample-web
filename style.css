@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -531,5 +535,21 @@ i{
     font-size: 1.2rem !important;
     font-weight: 600;
     text-shadow: 0 2px 5px rgba(0,0,0,0.4);
+}
+
+#myBtn{
+    
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    color: #fff;
+    background: #00abff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#myBtn:hover{
+    background-color: #606060;
 }
 
