@@ -553,3 +553,42 @@ i{
     background-color: #606060;
 }
 
+
+
+/* media queries */
+@media(max-width:768px){
+   .nav-item{
+       text-align: center !important;
+   }
+
+   .banner-section h1{
+       font-size: 1.5rem !important;
+       top: 60% !important;
+   }
+   .banner-section p{
+       display: none;
+   }
+   .banner-btn{
+       margin-top: 20px;
+   }
+   .service-div{
+       text-align: center !important;
+       margin-left: 10px !important;
+   }
+
+   .pricing , .happyclients , .contactus{
+       height: auto;
+    
+   }
+   .card-second{
+       transform: translateY(0px);
+       margin: 30px 0;
+   }
+
+   .footersection .last{
+       margin-top: 20px;
+   }
+}
+
+
+
